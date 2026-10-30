@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сюрприз от Моники</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  font-family: Arial;
+  text-align: center;
+  color: white;
+}
+h1 { font-size: 32px; }
+button {
+  padding: 20px 35px;
+  font-size: 25px;
+  border: none;
+  border-radius: 20px;
+  background: #ff1493;
+  color: white;
+}
+#surprise {
+  display: none;
+  font-size: 100px;
+}
+</style>
+</head>
+<body>
+<h1>Привет, дружище! 😁</h1>
+<button onclick="showSurprise()">СЮРПРИЗ!</button>
+<div id="surprise">🍑😂</div>
+<script>
+function showSurprise() {
+  document.getElementById("surprise").style.display = "block";
+  document.querySelector("h1").innerText = "СЮРПРИЗ ОТ МОНИКИ!";
+}
+</script>
+</body>
+</html>
